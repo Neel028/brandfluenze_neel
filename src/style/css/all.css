@@ -1,0 +1,69 @@
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  @media (min-width: 390px) {
+  
+    .container {
+      max-width: 390px;
+    }
+  }
+  @media (min-width: 420px) {
+  
+    .container {
+      max-width: 420px;
+    }
+  }
+  @media (min-width: 576px) {
+  
+    .container {
+      max-width: 576px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+  @media (min-width: 768px) {
+  
+    .container {
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+  
+    .container {
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 1200px) {
+  
+    .container {
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 1400px) {
+  
+    .container {
+      max-width: 100% ;
+    }
+}
+.hero_section_width{
+    max-width: 850px;
+}
+.features_section_width{
+    max-width: 900px;
+}
+.Feature_padding{
+    padding: 0px 50px 0px 0px;
+}
+.Strateg_max_width{
+    max-width: 600px;
+}
+.BenefitSectionProps_max_width{
+    max-width: 550px;
+}
+.ContactSectionProps_max_width{
+    max-width: 600px;
+}

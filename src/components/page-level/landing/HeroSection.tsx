@@ -36,8 +36,8 @@ const HeroSection: FC<HeroSectionProps> = ({ }) => {
                                     </div>
                                 </div>
                                 <div className="info text-center -mt-4">
-                                    <h1 className='text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold !leading-[1.2] text-white font-jakarta mb-2'>Connect Your <br /> Brand With Top <span className='font-instrument font-normal italic'>Creator’s</span>  </h1>
-                                    <p className='text-sm max_width_p xs:text-sm sm:text-base font-medium text-white max-md:hidden block'>Unleash India's Unstoppable 5M+ Creator Force. Skip the middlemen, collaborate directly with top influencers, and Top Talents to watch your ROI explode up to 10X. Ready to turn influence into empire?</p>
+                                    <h1 className=' text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold !leading-[1.2] text-white font-jakarta mb-2'>Connect Your <br /> Brand With Top <span className='font-instrument font-normal italic'>Creator’s</span>  </h1>
+                                    <p className='hero_section_width text-sm max_width_p xs:text-sm sm:text-base font-medium text-white max-md:hidden block'>Unleash India's Unstoppable 5M+ Creator Force. Skip the middlemen, collaborate directly with top influencers, and Top Talents to watch your ROI explode up to 10X. Ready to turn influence into empire?</p>
                                     <p className='text-xs xs:text-sm sm:text-base font-medium text-white max-md:block hidden'>Unleash India's Unstoppable 5M+ Creator Force.  Ready to turn influence into empire?</p>
                                 </div>
                                 <div className="action">

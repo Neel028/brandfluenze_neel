@@ -25,7 +25,7 @@ const ContactSection: FC<ContactSectionProps> = ({ }) => {
                         <div className="hero-section-text-content py-8 md:py-14 px-6 sm:px-8 md:px-12 grid grid-cols-1 lg:grid-cols-2">
                             <div className="flex items-start flex-col gap-6">
                                 <div className="info -mt-4">
-                                    <h1 className='text-4xl sm:text-5xl xl:text-6xl 2xl:text-6xl font-bold !leading-[1.2] text-white font-jakarta mb-2'>Ready to take your
+                                    <h1 className='ContactSectionProps_max_width text-4xl sm:text-5xl xl:text-6xl 2xl:text-6xl font-bold !leading-[1.2] text-white font-jakarta mb-2'>Ready to take your
                                         brand to the next
                                         level? </h1>
                                 </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans ,Inter,Instrument_Serif, DM_Sans } from 'next/font/google'
 import "../style/css/globals.css";
+import "../style/css/all.css"
 import Footer from "@/components/layout-level/landing/Footer";
 
 const inter = Inter({
