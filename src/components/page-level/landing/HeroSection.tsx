@@ -19,7 +19,7 @@ const HeroSection: FC<HeroSectionProps> = ({ }) => {
                 <Container>
                     <div className="content-part bg-theme-gradiant rounded-[28px] z-10 relative overflow-hidden">
                         <div className="fancy-shapes">
-                            <div className="circle absolute -z-[1] -left-[200px] sm:-left-[400px] -bottom-[200px] w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] border-[48px] sm:border-[70px] border-[#F3F5F7]/15 rounded-full">
+                            <div className="circle absolute -z-[1] -left-[200px] sm:-left-[400px] -bottom-[300px] w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] border-[48px] sm:border-[70px] border-[#F3F5F7]/15 rounded-full">
                             </div>
                             <div className="circle absolute -z-[1] -right-[200px] top-1/2 max-sm:-translate-y-1/2 sm:-top-[200px] w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] border-[48px] sm:border-[70px] border-[#F3F5F7]/15 rounded-full">
                             </div>

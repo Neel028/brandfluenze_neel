@@ -27,7 +27,7 @@ const FaqSection: FC<FaqSectionProps> = ({ }) => {
                             <h1 className='text-4xl sm:text-5xl xl:text-6xl 2xl:text-6xl font-bold !leading-[1.2] text-primary font-jakarta mb-2'>
                                 FAQs
                             </h1>
-                            <p className='text-xs xs:text-sm sm:text-base font-medium text-primary'>Still have Questions in your mind ?</p>
+                            <p className='text-xs xs:text-sm sm:text-base font-medium text-muted'>Still have Questions in your mind ?</p>
                         </div>
                         <div className="img-content lg:col-span-8">
                             <Accordion type="single" collapsible className="w-full space-y-2 lg:space-y-4">

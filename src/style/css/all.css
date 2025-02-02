@@ -1,69 +1,110 @@
 .container {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  @media (min-width: 390px) {
-  
-    .container {
-      max-width: 390px;
-    }
-  }
-  @media (min-width: 420px) {
-  
-    .container {
-      max-width: 420px;
-    }
-  }
-  @media (min-width: 576px) {
-  
-    .container {
-      max-width: 576px;
-      padding-right: 16px;
-      padding-left: 16px;
-    }
-  }
-  @media (min-width: 768px) {
-  
-    .container {
-      max-width: 100%;
-    }
-  }
-  @media (min-width: 992px) {
-  
-    .container {
-      max-width: 100%;
-    }
-  }
-  @media (min-width: 1200px) {
-  
-    .container {
-      max-width: 100%;
-    }
-  }
-  @media (min-width: 1400px) {
-  
-    .container {
-      max-width: 100% ;
-    }
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px;
 }
-.hero_section_width{
-    max-width: 850px;
+
+@media (min-width: 390px) {
+
+  .container {
+    max-width: 390px;
+  }
+
 }
-.features_section_width{
-    max-width: 900px;
+
+@media (min-width: 420px) {
+
+  .container {
+    max-width: 420px;
+  }
+
 }
-.Feature_padding{
-    padding: 0px 50px 0px 0px;
+
+@media (min-width: 576px) {
+
+  .container {
+    max-width: 576px;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .sm\:py-4 {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+  
 }
-.Strateg_max_width{
-    max-width: 600px;
+
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 100%;
+  }
+
+  
+/* bottom circle of hero section  */
+
+.-left-\[200px\] {
+  left: -200px;
 }
-.BenefitSectionProps_max_width{
-    max-width: 550px;
+.-top-\[300px\] {
+  top: -300px;
 }
-.ContactSectionProps_max_width{
-    max-width: 600px;
+
+
+}
+
+@media (min-width: 992px) {
+
+  .container {
+    max-width: 100%;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .container {
+    max-width: 100%;
+  }
+}
+
+.hero_section_width {
+  max-width: 850px;
+}
+
+.features_section_width {
+  max-width: 900px;
+}
+
+.Feature_padding {
+  padding: 0px 50px 0px 0px;
+}
+
+.Strateg_max_width {
+  max-width: 600px;
+}
+
+.BenefitSectionProps_max_width {
+  max-width: 550px;
+}
+
+.ContactSectionProps_max_width {
+  max-width: 600px;
+}
+
+.color_white {
+  color: white;
+}
+
+.bg-theme-gradiant_custom {
+  background-image: radial-gradient(50.09% 50.09% at 51.04% 48.92%, #F86F3A 0%, #FF4800 100%);
 }

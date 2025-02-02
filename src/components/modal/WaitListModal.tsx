@@ -148,7 +148,7 @@ const WaitListModal: FC<WaitListModalProps> = ({ open, close }) => {
                                     </FormItem>
                                 )}
                             />
-                            <Button type="submit" className="w-full bg-theme text-white hover:bg-theme">Submit</Button>
+                            <Button type="submit" className="w-full bg-theme-gradiant_custom color_white  hover:bg-theme">Submit</Button>
                         </form>
                     </Form>
                 </div>

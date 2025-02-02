@@ -15,7 +15,7 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({ }) => {
             <Container>
                 <div className="content-part bg-background-light rounded-[28px] relative overflow-hidden z-10">
                     <div className="fancy-shapes">
-                        <div className="circle absolute max-sm:hidden -z-[1] -left-[400px] -top-[200px] w-[600px] h-[600px] border-[70px] border-[#F3F5F7] rounded-full">
+                        <div className="circle absolute max-sm:hidden -z-[1] -left-[200px] -top-[300px] w-[600px] h-[600px] border-[70px] border-[#F3F5F7] rounded-full">
                         </div>
                         <div className="circle absolute max-sm:hidden -z-[1] -right-[300px] top-1/2 -translate-y-1/2 w-[600px] h-[600px] border-[70px] border-[#F3F5F7] rounded-full">
                         </div>
@@ -36,7 +36,7 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({ }) => {
                                 <p className='text-xs xs:text-sm sm:text-base font-medium leading-[1.4] text-primary lg:max-w-[80%] xl:max-w-[60%] mx-auto'>Elevate your brand with our expert solutions in influencer marketing, digital advertising, and content creation.</p>
                             </div>
                         </div>
-                        <div className="features-card-wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4">
+                        <div className="features-card-wrapper grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-2 lg:gap-4">
                             {featuresData.map((feature:Feature, index:number) => (
                                 <FeatureCard
                                     key={index}
