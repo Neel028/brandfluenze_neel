@@ -15,7 +15,7 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({ }) => {
             <Container>
                 <div className="content-part bg-background-light rounded-[28px] relative overflow-hidden z-10">
                     <div className="fancy-shapes">
-                        <div className="circle absolute max-sm:hidden -z-[1] -left-[200px] -top-[300px] w-[600px] h-[600px] border-[70px] border-[#F3F5F7] rounded-full">
+                        <div className="circle absolute display_none max-sm:hidden -z-[1] -left-[200px] -top-[300px] w-[600px] h-[600px] border-[70px] border-[#F3F5F7] rounded-full">
                         </div>
                         <div className="circle absolute max-sm:hidden -z-[1] -right-[300px] top-1/2 -translate-y-1/2 w-[600px] h-[600px] border-[70px] border-[#F3F5F7] rounded-full">
                         </div>

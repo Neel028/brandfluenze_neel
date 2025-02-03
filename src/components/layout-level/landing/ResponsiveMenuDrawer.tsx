@@ -4,6 +4,8 @@ import { NavigationMenu, NavigationMenuLink, NavigationMenuList } from "@/compon
 import { X } from "lucide-react";
 import Link from "next/link";
 import { Drawer } from "vaul";
+import { FC } from 'react'
+import Image from 'next/image'
 
 const ResponsiveMenuDrawer = () => {
   return (
@@ -14,7 +16,7 @@ const ResponsiveMenuDrawer = () => {
           <div className="max-w-md mx-auto">
             <Drawer.Title className="font-medium mb-4 flex-grow flex justify-end">
               <Drawer.Close>
-                  <X />
+                <X className={'color_orange'} />
               </Drawer.Close>
             </Drawer.Title>
             <NavigationMenu className="flex flex-col items-start max-w-full flex-1">
@@ -38,6 +40,16 @@ const ResponsiveMenuDrawer = () => {
                   <NavigationMenuLink className={'text-sm'}>Company</NavigationMenuLink>
                 </Link>
               </NavigationMenuList>
+              <NavigationMenuLink>
+                <div className="action-part flex items-center gap-4">
+                  <Link href={""} >
+                    <Image src={"/assets/images/play-store.svg"} alt='play-store-logo' width={135} height={40} className='max-w-[130px]' />
+                  </Link>
+                  <Link href={""} >
+                    <Image src={"/assets/images/app-store.svg"} alt='play-store-logo' width={135} height={40} className='max-w-[130px]' />
+                  </Link>
+                </div>
+              </NavigationMenuLink>
             </NavigationMenu>
           </div>
         </div>

@@ -21,6 +21,17 @@
 
 }
 
+
+
+
+
+
+/* top-1/2 max-sm:-translate-y-1/2 */
+
+
+
+
+
 @media (min-width: 576px) {
 
   .container {
@@ -35,13 +46,39 @@
   }
   
 }
-
+@media (max-width:765px){
+  .sm_top{
+    top: -100px;
+  }
+  .sm_bottom{
+    bottom: -400px ;
+  }
+  .sm_left{
+    left:-250px
+  }
+  .sm_right{
+    right:-275px
+  }
+  .sm_up_circle{
+    width: 500px;
+    height: 500px;
+  }
+  .sm_down_circle{
+    width: 600px;
+    height: 600px;
+  }
+}
+@media(max-width:768px){
+  
+  .display_none{
+    display: none;
+  }
+}
 @media (min-width: 768px) {
 
   .container {
     max-width: 100%;
   }
-
   
 /* bottom circle of hero section  */
 
@@ -107,4 +144,7 @@
 
 .bg-theme-gradiant_custom {
   background-image: radial-gradient(50.09% 50.09% at 51.04% 48.92%, #F86F3A 0%, #FF4800 100%);
+}
+.color_orange{
+  color: #F86F3A;
 }
