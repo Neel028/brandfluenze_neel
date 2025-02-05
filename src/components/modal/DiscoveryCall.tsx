@@ -41,7 +41,7 @@ const formSchema = z.object({
 })
 
 const DiscoveryCall: FC<DiscoveryCallProps> = ({ open, close }) => {
-    const form1 = useForm<z.infer<typeof formSchema>>({
+    const discovery_form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
             fullName: "",
@@ -67,10 +67,10 @@ const DiscoveryCall: FC<DiscoveryCallProps> = ({ open, close }) => {
                 </DialogHeader>
                 <Separator className="my-0" />
                 <div className="py-4 px-6">
-                    <Form {...form1}>
-                        <form onSubmit={form1.handleSubmit(onSubmit)} className="space-y-3">
+                    <Form {...discovery_form}>
+                        <form onSubmit={discovery_form.handleSubmit(onSubmit)} className="space-y-3">
                             <FormField
-                                control={form1.control}
+                                control={discovery_form.control}
                                 name="fullName"
                                 render={({ field }) => (
                                     <FormItem>
@@ -83,7 +83,7 @@ const DiscoveryCall: FC<DiscoveryCallProps> = ({ open, close }) => {
                                 )}
                             />
                             <FormField
-                                control={form1.control}
+                                control={discovery_form.control}
                                 name="email"
                                 render={({ field }) => (
                                     <FormItem>
@@ -96,7 +96,7 @@ const DiscoveryCall: FC<DiscoveryCallProps> = ({ open, close }) => {
                                 )}
                             />
                             <FormField
-                                control={form1.control}
+                                control={discovery_form.control}
                                 name="userType"
                                 render={({ field }) => (
                                     <FormItem>
@@ -118,7 +118,7 @@ const DiscoveryCall: FC<DiscoveryCallProps> = ({ open, close }) => {
                                 )}
                             />
                              <FormField
-                                control={form1.control}
+                                control={discovery_form.control}
                                 name="phoneNumber"
                                 render={({ field }) => (
                                     <FormItem>
@@ -131,7 +131,7 @@ const DiscoveryCall: FC<DiscoveryCallProps> = ({ open, close }) => {
                                 )}
                             />
                             <FormField
-                                control={form1.control}
+                                control={discovery_form.control}
                                 name="interest"
                                 render={({ field }) => (
                                     <FormItem>

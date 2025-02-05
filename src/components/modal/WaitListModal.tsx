@@ -41,7 +41,7 @@ const formSchema = z.object({
 })
 
 const WaitListModal: FC<WaitListModalProps> = ({ open, close }) => {
-    const form = useForm<z.infer<typeof formSchema>>({
+    const waitlist_form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
             fullName: "",
@@ -67,10 +67,10 @@ const WaitListModal: FC<WaitListModalProps> = ({ open, close }) => {
                 </DialogHeader>
                 <Separator className="my-0" />
                 <div className="py-4 px-6">
-                    <Form {...form}>
-                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
+                    <Form {...waitlist_form}>
+                        <form onSubmit={waitlist_form.handleSubmit(onSubmit)} className="space-y-3">
                             <FormField
-                                control={form.control}
+                                control={waitlist_form.control}
                                 name="fullName"
                                 render={({ field }) => (
                                     <FormItem>
@@ -83,7 +83,7 @@ const WaitListModal: FC<WaitListModalProps> = ({ open, close }) => {
                                 )}
                             />
                             <FormField
-                                control={form.control}
+                                control={waitlist_form.control}
                                 name="email"
                                 render={({ field }) => (
                                     <FormItem>
@@ -96,7 +96,7 @@ const WaitListModal: FC<WaitListModalProps> = ({ open, close }) => {
                                 )}
                             />
                             <FormField
-                                control={form.control}
+                                control={waitlist_form.control}
                                 name="userType"
                                 render={({ field }) => (
                                     <FormItem>
@@ -118,7 +118,7 @@ const WaitListModal: FC<WaitListModalProps> = ({ open, close }) => {
                                 )}
                             />
                              <FormField
-                                control={form.control}
+                                control={waitlist_form.control}
                                 name="phoneNumber"
                                 render={({ field }) => (
                                     <FormItem>
@@ -131,7 +131,7 @@ const WaitListModal: FC<WaitListModalProps> = ({ open, close }) => {
                                 )}
                             />
                             <FormField
-                                control={form.control}
+                                control={waitlist_form.control}
                                 name="interest"
                                 render={({ field }) => (
                                     <FormItem>
