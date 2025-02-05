@@ -148,3 +148,9 @@
 .color_orange{
   color: #F86F3A;
 }
+.margin_left{
+  margin-left: -35px !important;
+}
+.color_custom{
+  color: #6a7079;
+}

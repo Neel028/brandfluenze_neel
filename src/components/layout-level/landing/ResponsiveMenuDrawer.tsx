@@ -14,7 +14,10 @@ const ResponsiveMenuDrawer = () => {
       <Drawer.Content className="bg-background flex flex-col  h-full max-xxs:w-full w-full xs:w-[400px] mt-24 fixed bottom-0 right-0 z-50 overflow-y-auto overflow-x-hidden">
         <div className="p-4 bg-background/80 flex-1 h-full">
           <div className="max-w-md mx-auto">
-            <Drawer.Title className="font-medium mb-4 flex-grow flex justify-end">
+            <Drawer.Title className="font-medium mb-4 flex-grow flex items-center justify-between">
+            <Link href={""} >
+                <Image src={"/assets/images/final_brandfluenza-03.svg"} alt='final_brandfluenza-03' width={100} height={35} className='margin_left max-w-[130px]' />
+              </Link>
               <Drawer.Close>
                 <X className={'color_orange'} />
               </Drawer.Close>
@@ -22,22 +25,27 @@ const ResponsiveMenuDrawer = () => {
             <NavigationMenu className="flex flex-col items-start max-w-full flex-1">
               <NavigationMenuList className="py-4">
                 <Link href="/benefit" legacyBehavior passHref>
-                  <NavigationMenuLink className={'text-sm'}>Benefit</NavigationMenuLink>
+                  <NavigationMenuLink className={'text-sm color_custom'}>Benefit</NavigationMenuLink>
                 </Link>
               </NavigationMenuList>
               <NavigationMenuList className="py-4">
                 <Link href="/works" legacyBehavior passHref>
-                  <NavigationMenuLink className={'text-sm'}>How it Works</NavigationMenuLink>
+                  <NavigationMenuLink className={'text-sm color_custom'}>How it Works</NavigationMenuLink>
                 </Link>
               </NavigationMenuList>
               <NavigationMenuList className="py-4">
                 <Link href="/faq" legacyBehavior passHref>
-                  <NavigationMenuLink className={'text-sm'}>Faqs</NavigationMenuLink>
+                  <NavigationMenuLink className={'text-sm color_custom'}>Faqs</NavigationMenuLink>
                 </Link>
               </NavigationMenuList>
               <NavigationMenuList className="py-4">
                 <Link href="/company" legacyBehavior passHref>
-                  <NavigationMenuLink className={'text-sm'}>Company</NavigationMenuLink>
+                  <NavigationMenuLink className={'text-sm color_custom'}>Company</NavigationMenuLink>
+                </Link>
+              </NavigationMenuList>
+              <NavigationMenuList className="py-4">
+                <Link href="" legacyBehavior passHref>
+                  <NavigationMenuLink className={'text-sm'}>Get the app</NavigationMenuLink>
                 </Link>
               </NavigationMenuList>
               <NavigationMenuLink>
@@ -57,5 +65,6 @@ const ResponsiveMenuDrawer = () => {
     </Drawer.Portal>
   );
 };
+
 
 export default ResponsiveMenuDrawer;

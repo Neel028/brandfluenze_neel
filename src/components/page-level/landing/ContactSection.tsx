@@ -2,6 +2,7 @@
 
 import Container from '@/components/common/Container'
 import WaitListModal from '@/components/modal/WaitListModal'
+import DiscoveryCall from '@/components/modal/DiscoveryCall'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { FC, useState } from 'react'
@@ -12,6 +13,7 @@ interface ContactSectionProps {
 
 const ContactSection: FC<ContactSectionProps> = ({ }) => {
     const [openWaitListModal, setOpenWaitListModal] = useState<boolean>(false)
+    const [openDiscoveryCall,setOpenDiscoveryCall] = useState<boolean>(false)
 
     return (
         <>
@@ -31,7 +33,7 @@ const ContactSection: FC<ContactSectionProps> = ({ }) => {
                                 </div>
                                 <div className="action w-full">
                                     <div className="grid grid-cols-1 min-[480px]:flex items-center gap-2  mb-4">
-                                        <Button variant={"outline"}>Book a Discovery Call</Button>
+                                        <Button onClick={()=>setOpenDiscoveryCall(true)} variant={"outline"}>Book a Discovery Call</Button>
                                         <Button onClick={()=>setOpenWaitListModal(true)}>Join the waitlist</Button>
                                     </div>
                                     <div className="flex items-center gap-2">
@@ -59,6 +61,7 @@ const ContactSection: FC<ContactSectionProps> = ({ }) => {
                 </Container>
             </section>
             <WaitListModal close={() => setOpenWaitListModal(false)} open={openWaitListModal} />
+            <DiscoveryCall  close={()=>setOpenDiscoveryCall(false)} open={openDiscoveryCall}/>
         </>
     )
 }

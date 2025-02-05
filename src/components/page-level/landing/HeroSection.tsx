@@ -3,6 +3,8 @@
 import Container from '@/components/common/Container'
 import Header from '@/components/layout-level/landing/Header'
 import WaitListModal from '@/components/modal/WaitListModal'
+import DiscoveryCall from '@/components/modal/DiscoveryCall'
+
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import { FC, useState } from 'react'
@@ -13,8 +15,12 @@ interface HeroSectionProps {
 
 const HeroSection: FC<HeroSectionProps> = ({ }) => {
     const [openWaitListModal,setOpenWaitListModal] = useState<boolean>(false)
+    const [openDiscoveryCall,setOpenDiscoveryCall] = useState<boolean>(false)
+
     return (
         <>
+        
+      <link rel="preload" as="image" href="/assets/images/final_brandfluenza-03.svg"></link>
             <section>
                 <Container>
                     <div className="content-part bg-theme-gradiant rounded-[28px] z-10 relative overflow-hidden">
@@ -44,7 +50,7 @@ const HeroSection: FC<HeroSectionProps> = ({ }) => {
                                 </div>
                                 <div className="action">
                                     <div className="grid grid-cols-1 min-[480px]:flex items-center gap-2 mb-4">
-                                        <Button variant={"outline"}>Book a Discovery Call</Button>
+                                        <Button onClick={()=>setOpenDiscoveryCall(true)} variant={"outline"}>Book a Discovery Call</Button>
                                         <Button onClick={()=>setOpenWaitListModal(true)}>Join the waitlist</Button>
                                     </div>
                                     <div className="flex items-center gap-2 justify-center">
@@ -72,6 +78,8 @@ const HeroSection: FC<HeroSectionProps> = ({ }) => {
                 </Container>
             </section>
             <WaitListModal  close={()=>setOpenWaitListModal(false)} open={openWaitListModal}/>
+            <DiscoveryCall  close={()=>setOpenDiscoveryCall(false)} open={openDiscoveryCall}/>
+
         </>
     )
 }
